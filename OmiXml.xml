@@ -1,0 +1,108 @@
+<aspect_version_assignment xmlns="http://www.hp.com/2009/software/opr/data_model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" self="http://emspr01bvwa.healthnow.org:80/opr-config-server/rest/ws/9.20/assignment_list/AspectAssignment:8ed590a7-1982-2a4a-fbea-c5f75ec66b29:4fe1d68455b7fff787a06e1dbba73ad8" type="urn:x-hp:2009:software:data_model:opr:type:aspect_version_assignment" version="10.11">
+   <id>AspectAssignment:8ed590a7-1982-2a4a-fbea-c5f75ec66b29:4fe1d68455b7fff787a06e1dbba73ad8</id>
+   <related_ci type="urn:x-hp:2009:software:data_model:opr:type:reference:configuration_item:related_ci" version="1.1">
+      <target_id>4fe1d68455b7fff787a06e1dbba73ad8</target_id>
+      <target_type>urn:x-hp:2009:software:data_model:type:configuration_item</target_type>
+      <configuration_item type="urn:x-hp:2009:software:data_model:type:configuration_item" version="1.2">
+         <id>4fe1d68455b7fff787a06e1dbba73ad8</id>
+         <type>nt</type>
+         <name>cxtpr04bvwa.healthnow.org</name>
+         <display_label>cxtpr04bvwa.healthnow.org</display_label>
+         <type_label>nt</type_label>
+      </configuration_item>
+   </related_ci>
+   <is_enabled>true</is_enabled>
+   <parameter_value_list type="urn:x-hp:2009:software:data_model:opr:type:parameter_value_list" version="9.20">
+      <parameter_value type="urn:x-hp:2009:software:data_model:opr:type:parameter_value" version="9.20">
+         <parameter_context type="urn:x-hp:2009:software:data_model:opr:type:parameter_context" version="9.20">
+            <defined_in_type>PolicyTemplate</defined_in_type>
+            <defined_in_label>Ping (HNNY Monitoring Automation Templates)</defined_in_label>
+         </parameter_context>
+         <parameter type="urn:x-hp:2009:software:data_model:opr:type:parameter" version="10.11">
+            <id>5915c74d-c0d8-8eda-3da4-c5f75ed21e88</id>
+            <display_label>Ping - Host</display_label>
+            <type>string</type>
+            <description></description>
+            <base_parameter_id>3cb57557-51fd-d09f-c0f0-1f6494e18517</base_parameter_id>
+            <ui_order>0</ui_order>
+            <readonly>false</readonly>
+            <expert>false</expert>
+            <mandatory>true</mandatory>
+            <is_instance_parameter>true</is_instance_parameter>
+            <default_value type="urn:x-hp:2009:software:data_model:opr:type:parameter_default_value" version="9.20">
+               <model_property>fqdn</model_property>
+            </default_value>
+         </parameter>
+         <parameter_value_instance_list type="urn:x-hp:2009:software:data_model:opr:type:parameter_value_instance_list" version="9.20">
+            <parameter_value_instance type="urn:x-hp:2009:software:data_model:opr:type:parameter_value_instance" version="9.20">
+               <order>1</order>
+               <value>cxtpr04bvwa.healthnow.org</value>
+               <model_property>fqdn</model_property>
+               <is_default>true</is_default>
+               <dependent_parameter_value_list type="urn:x-hp:2009:software:data_model:opr:type:dependent_parameter_value_list" version="9.20">
+                  <parameter_value type="urn:x-hp:2009:software:data_model:opr:type:parameter_value" version="9.20">
+                     <value>180</value>
+                     <is_default>true</is_default>
+                     <parameter_context type="urn:x-hp:2009:software:data_model:opr:type:parameter_context" version="9.20">
+                        <defined_in_type>PolicyTemplate</defined_in_type>
+                        <defined_in_label>Ping (HNNY Monitoring Automation Templates)</defined_in_label>
+                     </parameter_context>
+                     <parameter type="urn:x-hp:2009:software:data_model:opr:type:parameter" version="10.11">
+                        <id>f2145330-f3ee-6664-733d-c5f75ed3ebe2</id>
+                        <display_label>Ping - Frequency - Error</display_label>
+                        <type>string</type>
+                        <description>The frequency at which the monitor runs once it is in an error state.</description>
+                        <base_parameter_id>9591d7f4-d847-3d3a-aa19-c5f72cb91c25</base_parameter_id>
+                        <ui_order>3</ui_order>
+                        <readonly>false</readonly>
+                        <expert>false</expert>
+                        <mandatory>true</mandatory>
+                        <is_instance_parameter>false</is_instance_parameter>
+                        <default_value type="urn:x-hp:2009:software:data_model:opr:type:parameter_default_value" version="9.20">
+                           <value>180</value>
+                        </default_value>
+                     </parameter>
+                  </parameter_value>
+                  <parameter_value type="urn:x-hp:2009:software:data_model:opr:type:parameter_value" version="9.20">
+                     <value>180</value>
+                     <is_default>true</is_default>
+                     <parameter_context type="urn:x-hp:2009:software:data_model:opr:type:parameter_context" version="9.20">
+                        <defined_in_type>PolicyTemplate</defined_in_type>
+                        <defined_in_label>Ping (HNNY Monitoring Automation Templates)</defined_in_label>
+                     </parameter_context>
+                     <parameter type="urn:x-hp:2009:software:data_model:opr:type:parameter" version="10.11">
+                        <id>9cd8fd0a-35ef-7107-9899-c5f75ed216fc</id>
+                        <display_label>Ping - Frequency - Normal</display_label>
+                        <type>string</type>
+                        <description>The frequency at which the monitor runs in seconds</description>
+                        <base_parameter_id>6ff243b6-b23d-a8d4-3bde-c5f6a30e55ea</base_parameter_id>
+                        <ui_order>3</ui_order>
+                        <readonly>false</readonly>
+                        <expert>false</expert>
+                        <mandatory>true</mandatory>
+                        <is_instance_parameter>false</is_instance_parameter>
+                        <default_value type="urn:x-hp:2009:software:data_model:opr:type:parameter_default_value" version="9.20">
+                           <value>180</value>
+                        </default_value>
+                     </parameter>
+                  </parameter_value>
+               </dependent_parameter_value_list>
+            </parameter_value_instance>
+         </parameter_value_instance_list>
+      </parameter_value>
+   </parameter_value_list>
+   <assigned_by>AutoAssignment</assigned_by>
+   <last_updated_by>AutoAssignment</last_updated_by>
+   <time_created>2018-04-02T22:43:58.6-04:00</time_created>
+   <time_last_updated>2018-05-20T02:57:52.33-04:00</time_last_updated>
+   <link rel="deployment_job_list" href="http://emspr01bvwa.healthnow.org:80/opr-config-server/rest/ws/9.20/deployment_job_list/assignment/AspectAssignment:8ed590a7-1982-2a4a-fbea-c5f75ec66b29:4fe1d68455b7fff787a06e1dbba73ad8"/>
+   <link rel="verbose" href="http://emspr01bvwa.healthnow.org:80/opr-config-server/rest/ws/9.20/assignment_list/AspectAssignment:8ed590a7-1982-2a4a-fbea-c5f75ec66b29:4fe1d68455b7fff787a06e1dbba73ad8?view=verbose"/>
+   <aspect_version_ref type="urn:x-hp:2009:software:data_model:opr:type:reference:aspect_version" version="10.11">
+      <target_id>8ed590a7-1982-2a4a-fbea-c5f75ec66b29</target_id>
+      <target_type>urn:x-hp:2009:software:data_model:opr:type:aspect_version</target_type>
+      <target_href>http://emspr01bvwa.healthnow.org:80/opr-config-server/rest/ws/10.11/aspect_version_list/8ed590a7-1982-2a4a-fbea-c5f75ec66b29</target_href>
+      <display_label>HNNY - Ping</display_label>
+      <major_version>1</major_version>
+      <minor_version>4</minor_version>
+   </aspect_version_ref>
+</aspect_version_assignment>
